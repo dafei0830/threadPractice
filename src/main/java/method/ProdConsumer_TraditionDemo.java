@@ -8,6 +8,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Author wuzhenfei
  * @Description
  * @Date 2020/4/8 10:50
+ *
+ * 生产者消费者，生产一个消费一个
  **/
 
 class ShareData
@@ -60,6 +62,7 @@ public class ProdConsumer_TraditionDemo {
 
     public static void main(String[] args) {
         ShareData shareData = new ShareData();
+
         new Thread(()->{
             for (int i = 0; i <= 5; i++) {
                 try
